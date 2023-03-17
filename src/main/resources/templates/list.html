@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!-- table-->
+<table>
+    <tr><th>id</th><th>title</th><th>description</th></tr>
+    th:each="pr: ${providers}" th:value="${pr.id}" th:text="${pr.name}"
+</table>
+</body>
+</html>
